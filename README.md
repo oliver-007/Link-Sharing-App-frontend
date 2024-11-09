@@ -63,7 +63,7 @@ The app will be running on http://localhost:5173.
 - MongoDB (Backend)
 - Cloudinary (For media storage)
 - Express.js (Backend)
-  -Mongoose (Backend)
+- Mongoose (Backend)
 
 ## Usage
 
