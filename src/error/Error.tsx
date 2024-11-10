@@ -44,7 +44,7 @@ const Error = () => {
   const navigate = useNavigate();
 
   const handleBtn = () => {
-    navigate("/links");
+    navigate("/");
   };
 
   return (
