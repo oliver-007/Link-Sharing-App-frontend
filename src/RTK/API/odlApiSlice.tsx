@@ -114,7 +114,7 @@ export const odlApiSlice = createApi({
           dispatch(addLinks(data?.data.links));
         } catch (error: any) {
           console.log("queryFulfilled promise failed : ", error);
-          dispatch(setMessage(error.error.error));
+          // dispatch(setMessage(error.error.error));
         }
       },
     }),
