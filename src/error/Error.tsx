@@ -33,12 +33,7 @@
 
 import { useNavigate } from "react-router-dom";
 import error404Svg from "../assets/404_error.svg";
-// import error401Svg from "../assets/401_error.svg";
-
-// interface IErrorProps {
-//   errorMessage?: string;
-//   status?: number;
-// }
+import { GoHomeFill } from "react-icons/go";
 
 const Error = () => {
   const navigate = useNavigate();
@@ -49,14 +44,20 @@ const Error = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center bg-no-repeat bg-center w-screen h-screen  "
+      className=" bg-no-repeat bg-center flex justify-center items-end w-screen h-screen sm:relative"
       style={{
         backgroundImage: `url( ${error404Svg})`,
       }}
     >
-      {/* <p className="text-3xl text-rose-500 font-semibold"> {errorMessage} </p> */}
-      <button onClick={handleBtn} className="btn" type="button">
-        Go Home
+      <button
+        onClick={handleBtn}
+        className=" mb-[100px] shadow-md shadow-bluishPurple rounded-md text-zinc-600 size-fit px-4 py-2 sm:absolute right-10 top-10 "
+        type="button"
+      >
+        <span className="flex gap-x-2 items-center ">
+          <GoHomeFill />
+          Go Home
+        </span>
       </button>
     </div>
   );
