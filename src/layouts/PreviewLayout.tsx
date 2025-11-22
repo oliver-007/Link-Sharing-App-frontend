@@ -69,7 +69,7 @@ const PreviewLayout = () => {
             </li>
           </ul>
         ) : (
-          <Link to="/">
+          <Link to="/links">
             <div className="flex text-2xl gap-x-3 items-center justify-center mt-5 ">
               <BsLink
                 size={30}
